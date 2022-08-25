@@ -3,11 +3,13 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    background-image: url("../img/galaxy-bg.jpg");
 }
 
 header {
     display: flex;
     background-color: black;
+    opacity: 0.3;
     color: white;
     padding: 16px;
     gap: 16px;
@@ -20,12 +22,13 @@ header img{
 }
 
 main {
-    background-color: aliceblue;
+    
     flex-grow: 1;
 
 }
 
 footer{
     background-color: black;
-    color:white
+    color:white;
+    opacity: 0.3;
 }
