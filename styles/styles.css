@@ -4,7 +4,6 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-image: url("../img/galaxy-bg.jpg");
 
 }
 
