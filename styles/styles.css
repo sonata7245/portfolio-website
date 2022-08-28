@@ -3,7 +3,6 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  /*comment*/
 }
 
 nav ul {
@@ -19,39 +18,54 @@ nav ul li {
 nav ul li a {
   text-decoration: none;
   color: inherit;
+  font-size: 24px;
+}
+
+nav ul li a:hover {
+  text-decoration: none;
+  color: white;
+  background-color: purple;
+  text-shadow: none;
 }
 
 header {
   display: flex;
-  background-color: rgba(0, 0, 0, 0.71);
+  background-color: rgba(0, 0, 0);
   color: white;
   padding: 16px;
   gap: 16px;
   align-items: center;
   height: 20%;
   justify-content: space-between;
+  text-shadow: purple 2px 2px;
 }
 
 .profile-image {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: -4%;
+  margin-top: -40px;
 }
 
 .profile-image img {
   border-radius: 50%;
-  max-width: 10%;
-  min-width: 100px;
-  border: solid white 3px;
+  max-width: 20rem;
+  /* border: solid white 3px; */
   margin: auto;
 }
 
 main {
   flex-grow: 1;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+p {
+  width: 80rem;
 }
 
 footer {
-  background-color: rgba(0, 0, 0, 0.71);
+  background-color: rgba(0, 0, 0);
   color: white;
 }
