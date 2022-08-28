@@ -24,7 +24,7 @@ nav ul li a {
 nav ul li a:hover {
   text-decoration: none;
   color: white;
-  background-color: purple;
+  background-color: teal;
   text-shadow: none;
 }
 
@@ -37,7 +37,7 @@ header {
   align-items: center;
   height: 20%;
   justify-content: space-between;
-  text-shadow: purple 2px 2px;
+  text-shadow: teal 2px 2px;
 }
 
 .profile-image {
