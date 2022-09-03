@@ -3,6 +3,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  margin: 0;
 }
 
 nav ul {
@@ -18,14 +19,18 @@ nav ul li {
 nav ul li a {
   text-decoration: none;
   color: inherit;
-  font-size: 24px;
+  font-size: 1.5em;
+  display: inline-block
 }
 
 nav ul li a:hover {
   text-decoration: none;
   color: white;
-  background-color: teal;
-  text-shadow: none;
+  background-color: rgba(0, 128, 128);
+  transform: translateY(-.2em);
+  transition: .25s;
+  box-shadow: 0 2px .4em rgb(250, 250, 250);
+  border-radius: .1em;
 }
 
 header {
@@ -35,23 +40,30 @@ header {
   padding: 16px;
   gap: 16px;
   align-items: center;
-  height: 20%;
+  height: 2em;
   justify-content: space-between;
-  text-shadow: teal 2px 2px;
+  text-shadow: rgb(0, 128, 128) 2px 2px;
+  border-bottom: solid 1px teal;
+}
+
+.hero{
+  display: flex;
+  height: 40%;
+  padding: 2em;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.905);
+  font-size: 2em;
+  box-shadow: 0 3px .4em rgb(0, 128, 128);
+  
 }
 
 .profile-image {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: -40px;
-}
-
-.profile-image img {
   border-radius: 50%;
-  max-width: 20rem;
-  /* border: solid white 3px; */
-  margin: auto;
+  width: 15%;
+  margin-left: 2em;
+
 }
 
 main {
@@ -59,13 +71,16 @@ main {
   display:flex;
   flex-direction: column;
   align-items: center;
+  background-color: rgba(0, 0, 0, 0.816);
+  color: white;
 }
 
-p {
-  width: 80rem;
+main p {
+  width: 80%;
 }
 
 footer {
   background-color: rgba(0, 0, 0);
   color: white;
+  text-align: center;
 }
