@@ -4,68 +4,140 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="./styles/styles.css" />
     <title>Joshua Jones Portfolio</title>
   </head>
   <body>
-    <header>
-      <right> <h1>Joshua J Jones</h1></right>
-      <nav>
-        <ul>
-          <li><a href="./index.html">Home</a></li>
-          <li><a href="./about.html">About Me</a></li>
-          <li><a href="./projects.html">Projects</a></li>
-          <li><a href="./resume.html">Resume</a></li>
-          <li><a href="https://github.com/sonata7245">GitHub</a></li>
-        </ul>
-      </nav>
-    </header>
-    <div class="hero">
-           <p>Some random text goes here!</p>
-           <img
-           class="profile-image"
-           src="./img/joshportfolio.jpg"
-           alt="Image of Josh on Rocks">
+
+    <!-- Navbar -->
+    <nav id="mainNavbar" class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand">Joshua J Jones</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse"
+          id="navbarSupportedContent"
+          data-toggle="collapse"
+          data-target=".navbar-collapse"
+        >
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="./index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./about.html">About Me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./projects.html">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./resume.html">Resume</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://github.com/sonata7245"
+                >GitHub</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero -->
+    <div class="container-fluid px-0" id="hero">
+      <div class="row align-items-center">
+        <div class="col-8 text-center">
+          <div class="row">
+            <div class="col-100">
+              <h2>Some random text goes here!</h2>
+            </div>
+          </div>
+        </div>
+        <div class="col-4">
+          <img class="img-fluid" src="./img/joshportfolio.jpg" alt="Image of Josh on Rocks"/>
+        </div>
+      </div>
     </div>
-    <main>
-      <h2>Welcome to my portfolio.</h2>
-       <p>
-        Lorem ipsum <span>dolor sit amet consectetur adipisicing</span> elit. Incidunt qui
-        officiis id consequuntur pariatur eaque ad reiciendis. Harum dolorem
-        possimus facere delectus, provident quaerat consectetur, enim ullam eum
-        eius vitae? Inventore placeat, quo <span>dolor sit amet consectetur adipisicing</span> obcaecati impedit tempore ad dolorem
-        at ipsa ab dicta cumque neque labore, ea rem assumenda eveniet
-        doloremque, magni hic. Dignissimos nisi doloribus doloremque cumque sint
-        atque nihil!
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt qui
-        officiis id consequuntur pariatur eaque ad reiciendis. Harum dolorem
-        possimus facere delectus, provident quaerat consectetur, enim ullam eum
-        eius vitae? Inventore placeat, quo obcaecati impedit tempore ad dolorem
-        at ipsa ab dicta cumque neque labore, ea <span>dolor sit amet consectetur adipisicing</span> rem assumenda eveniet
-        doloremque, magni hic. Dignissimos nisi doloribus doloremque cumque sint
-        atque nihil!
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt qui
-        officiis id consequuntur pariatur eaque ad reiciendis. Harum dolorem
-        possimus facere delectus, provident <span>dolor sit amet consectetur adipisicing</span> quaerat consectetur, enim ullam eum
-        eius vitae? Inventore placeat, quo obcaecati impedit tempore ad dolorem
-        at ipsa ab dicta cumque neque labore, ea rem assumenda eveniet
-        doloremque, magni hic. Dignissimos nisi doloribus doloremque cumque sint
-        atque nihil!
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt qui
-        officiis id consequuntur pariatur eaque ad reiciendis. Harum dolorem
-        possimus facere delectus, provident quaerat consectetur, enim ullam eum
-        eius vitae? Inventore placeat, quo obcaecati impedit tempore ad dolorem
-        at ipsa ab dicta cumque neque labore, ea rem assumenda eveniet
-        doloremque, magni hic. Dignissimos nisi doloribus doloremque cumque sint
-        atque nihil!
-      </p>
-    </main>
-    <footer>Josh Jones &copy; 2022</footer>
+
+    <!-- Main Content -->
+    <div class="container-fluid px-0" id="main">
+      <div class="row justify-content-center">
+        <div class="col-8">
+          <h2>Welcome to my portfolio.</h2>
+          <p>
+            Lorem ipsum
+            <span>dolor sit amet consectetur adipisicing</span> elit. Incidunt
+            qui officiis id consequuntur pariatur eaque ad reiciendis. Harum
+            dolorem possimus facere delectus, provident quaerat consectetur,
+            enim ullam eum eius vitae? Inventore placeat, quo
+            <span>dolor sit amet consectetur adipisicing</span> obcaecati
+            impedit tempore ad dolorem at ipsa ab dicta cumque neque labore, ea
+            rem assumenda eveniet doloremque, magni hic. Dignissimos nisi
+            doloribus doloremque cumque sint atque nihil!
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt
+            qui officiis id consequuntur pariatur eaque ad reiciendis. Harum
+            dolorem possimus facere delectus, provident quaerat consectetur,
+            enim ullam eum eius vitae? Inventore placeat, quo obcaecati impedit
+            tempore ad dolorem at ipsa ab dicta cumque neque labore, ea
+            <span>dolor sit amet consectetur adipisicing</span> rem assumenda
+            eveniet doloremque, magni hic. Dignissimos nisi doloribus doloremque
+            cumque sint atque nihil!
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt
+            qui officiis id consequuntur pariatur eaque ad reiciendis. Harum
+            dolorem possimus facere delectus, provident
+            <span>dolor sit amet consectetur adipisicing</span> quaerat
+            consectetur, enim ullam eum eius vitae? Inventore placeat, quo
+            obcaecati impedit tempore ad dolorem at ipsa ab dicta cumque neque
+            labore, ea rem assumenda eveniet doloremque, magni hic. Dignissimos
+            nisi doloribus doloremque cumque sint atque nihil!
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt
+            qui officiis id consequuntur pariatur eaque ad reiciendis. Harum
+            dolorem possimus facere delectus, provident quaerat consectetur,
+            enim ullam eum eius vitae? Inventore placeat, quo obcaecati impedit
+            tempore ad dolorem at ipsa ab dicta cumque neque labore, ea rem
+            assumenda eveniet doloremque, magni hic. Dignissimos nisi doloribus
+            doloremque cumque sint atque nihil!
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-center">Josh Jones &copy; 2022</footer>
+
+    <!-- Bootstrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+      integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+      crossorigin="anonymous"
+    ></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script> -->
   </body>
 </html>
