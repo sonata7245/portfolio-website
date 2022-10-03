@@ -1,36 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects</title>
-    <link rel="stylesheet" href="./styles/styles.css" />
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous" />
+  <link rel="stylesheet" href="./styles/styles.css" />
+  <title>Projects</title>
 </head>
+
 <body>
-    <header>
-        <right>
-          <h1>Joshua J Jones</h1></right>
-        <nav>
-          <ul>
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="./about.html">About Me</a></li>
-            <li><a href="./projects.html">Projects</a></li>
-            <li><a href="./resume.html">Resume</a></li>
-            <li><a href="https://github.com/sonata7245">GitHub</a></li>
-          </ul>
-        </nav>
-      </header>    
-       <main><h2>This is my projects page</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt qui officiis id consequuntur pariatur eaque ad reiciendis. Harum dolorem possimus facere delectus, provident quaerat consectetur, enim ullam eum eius vitae?
-        Inventore placeat, quo obcaecati impedit tempore ad dolorem at ipsa ab dicta cumque neque labore, ea rem assumenda eveniet doloremque, magni hic. Dignissimos nisi doloribus doloremque cumque sint atque nihil!</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt qui officiis id consequuntur pariatur eaque ad reiciendis. Harum dolorem possimus facere delectus, provident quaerat consectetur, enim ullam eum eius vitae?
-        Inventore placeat, quo obcaecati impedit tempore ad dolorem at ipsa ab dicta cumque neque labore, ea rem assumenda eveniet doloremque, magni hic. Dignissimos nisi doloribus doloremque cumque sint atque nihil!</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt qui officiis id consequuntur pariatur eaque ad reiciendis. Harum dolorem possimus facere delectus, provident quaerat consectetur, enim ullam eum eius vitae?
-        Inventore placeat, quo obcaecati impedit tempore ad dolorem at ipsa ab dicta cumque neque labore, ea rem assumenda eveniet doloremque, magni hic. Dignissimos nisi doloribus doloremque cumque sint atque nihil!</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt qui officiis id consequuntur pariatur eaque ad reiciendis. Harum dolorem possimus facere delectus, provident quaerat consectetur, enim ullam eum eius vitae?
-        Inventore placeat, quo obcaecati impedit tempore ad dolorem at ipsa ab dicta cumque neque labore, ea rem assumenda eveniet doloremque, magni hic. Dignissimos nisi doloribus doloremque cumque sint atque nihil!</p>
-      </main>
-      <footer>Josh Jones &copy; 2022</footer>
+  <!-- Navbar -->
+  <nav id="mainNavbar" class="navbar navbar-expand-lg sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand">Joshua J Jones</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent" data-toggle="collapse"
+        data-target=".navbar-collapse">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="./index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./about.html">About Me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./projects.html">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./resume.html">Resume</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://github.com/sonata7245">GitHub</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <div class="container-fluid mt-2" id="main">
+<h1 class="text-center">Projects</h1>
+    <div class="row justify-content-center mt-2 border-top border-bottom">
+      <div class="col-10 col-lg-6 my-2">
+        <p>
+          <a href="http://sailchelan.com" class="project-link"><h2>Lake Chelan Sailing Association</h2></a>
+          <p> LCSA membership website built on <span>Wordpress</span> and <span>WooCommerce</span>. This website offers membership managment (including membership dues), Boat checkout and reservation based on membership levels and club news.
+
+        </p>
+      </div>
+      <a href="http://sailchelan.com" class="col-10 col-lg-4 my-2"><img src="./img/LCSA.jpg" alt="" class="img-fluid"></a>
+       
+      
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="text-center mt-auto">Josh Jones &copy; 2022</footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+    integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+    crossorigin="anonymous"></script>
+
+  <script>
+    $(function () {
+      $(document).scroll(function () {
+        var $nav = $("#mainNavbar");
+        $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
+      });
+    });
+  </script>
 </body>
+
 </html>

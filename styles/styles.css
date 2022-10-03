@@ -2,88 +2,68 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
   margin: 0;
   background-color: #1D3461;
   color: #62BEC1;
 }
 
-
-
-/* nav ul {
-  display: flex;
-  gap: 16px;
-  flex-wrap: wrap;
+#mainNavbar{
+  transition: background-color 500ms;
 }
 
-nav ul li {
-  list-style: none;
-}
-
-nav ul li a {
-  text-decoration: none;
-  color: inherit;
-  font-size: 1.5em;
-  display: inline-block
-}
-
-nav ul li a:hover {
-  text-decoration: none;
+.navbar-brand, .nav-link, h1, h2 {
   color: #0F7EFF;
-  background-color: #66101F;
-  transform: translateY(-.2em);
-  transition: .25s;
-  border-radius: .1em;
-  text-shadow: none;
-} */
-/* 
-header {
-  display: flex;
-  color: #0F7EFF;
-  padding: 16px;
-  gap: 16px;
-  align-items: center;
-  height: 2em;
-  justify-content: space-between;
-  text-shadow: #62BEC1 2px 2px;
-  border-bottom: solid 1px #62BEC1;
-} */
 
-/* .hero{
-  display: flex;
-  color: #62BEC1;
-  height: 40%;
-  padding: 2em;
-  justify-content: center;
-  align-items: center;
-  font-size: 2em;
-  
 }
 
-.profile-image {
-  border-radius: 50%;
-  width: 15%;
-  margin-left: 2em;
+.nav-link:hover, .navbar-brand:hover{
+  color:#6BD425;
+}
 
-} */
+.scrolled {
+  background-color: #66101ec4;
+  transition: background-color 500ms;
+}
 
-/* main {
-  flex-grow: 1;
-  display:flex;
-  flex-direction: column;
-  align-items: center;
+.scrolled .navbar-brand, .scrolled .nav-link{
   color: #62BEC1;
 }
 
-main p{
-  max-width: 80%;
+.scrolled .navbar-brand:hover, .scrolled .nav-link:hover{
+  color: #0F7EFF;
+}
+
+.portfolio-img{
+  max-width: 400px;
+}
+
+.about-img{
+  max-width: 400px;
 }
 
 span{
   color: #6BD425;
+  line-height: .5em;
 }
 
-footer {
-  color: #62BEC1;
-  text-align: center;
-} */
+.hero-text h1{
+  color: #0F7EFF;
+}
+
+.hero-text h1, .hero-text p{
+  margin: 0;
+}
+
+.project-link{
+  text-decoration: none;
+  color: inherit;
+}
+
+.project-link:hover{
+  color:#6BD425
+}
+
+.project-img{
+  max-width: 400px;
+}

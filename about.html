@@ -1,36 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me</title>
-    <link rel="stylesheet" href="./styles/styles.css" />
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous" />
+  <link rel="stylesheet" href="./styles/styles.css" />
+  <title>About</title>
 </head>
+
 <body>
-    <header>
-        <right>
-          <h1>Joshua J Jones</h1></right>
-        <nav>
-          <ul>
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="./about.html">About Me</a></li>
-            <li><a href="./projects.html">Projects</a></li>
-            <li><a href="./resume.html">Resume</a></li>
-            <li><a href="https://github.com/sonata7245">GitHub</a></li>
-          </ul>
-        </nav>
-      </header> 
-      <main><h2>Here is where I tell about myself</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt qui officiis id consequuntur pariatur eaque ad reiciendis. Harum dolorem possimus facere delectus, provident quaerat consectetur, enim ullam eum eius vitae?
-        Inventore placeat, quo obcaecati impedit tempore ad dolorem at ipsa ab dicta cumque neque labore, ea rem assumenda eveniet doloremque, magni hic. Dignissimos nisi doloribus doloremque cumque sint atque nihil!</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt qui officiis id consequuntur pariatur eaque ad reiciendis. Harum dolorem possimus facere delectus, provident quaerat consectetur, enim ullam eum eius vitae?
-        Inventore placeat, quo obcaecati impedit tempore ad dolorem at ipsa ab dicta cumque neque labore, ea rem assumenda eveniet doloremque, magni hic. Dignissimos nisi doloribus doloremque cumque sint atque nihil!</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt qui officiis id consequuntur pariatur eaque ad reiciendis. Harum dolorem possimus facere delectus, provident quaerat consectetur, enim ullam eum eius vitae?
-        Inventore placeat, quo obcaecati impedit tempore ad dolorem at ipsa ab dicta cumque neque labore, ea rem assumenda eveniet doloremque, magni hic. Dignissimos nisi doloribus doloremque cumque sint atque nihil!</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt qui officiis id consequuntur pariatur eaque ad reiciendis. Harum dolorem possimus facere delectus, provident quaerat consectetur, enim ullam eum eius vitae?
-        Inventore placeat, quo obcaecati impedit tempore ad dolorem at ipsa ab dicta cumque neque labore, ea rem assumenda eveniet doloremque, magni hic. Dignissimos nisi doloribus doloremque cumque sint atque nihil!</p>
-      </main>
-      <footer>Josh Jones &copy; 2022</footer>
+  <!-- Navbar -->
+  <nav id="mainNavbar" class="navbar navbar-expand-lg sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand">Joshua J Jones</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent" data-toggle="collapse"
+        data-target=".navbar-collapse">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="./index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./about.html">About Me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./projects.html">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./resume.html">Resume</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://github.com/sonata7245">GitHub</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- Main Content -->
+  <div class="container-fluid mt-2" id="main">
+    <div class="row justify-content-center">
+      <div class="col-10">
+        <h2 class="text-center">About Me</h2>
+
+        <div class="row justify-content-center align-items-center">
+
+          <div class="col-12 col-md-6 text-center mt-2 p-0 order-2 order-lg-1 my-md-2">
+            <p>
+              I am a <span>Process Improvement Analyst</span> currently residing in the Phoenix, AZ area. Throughout my
+              career I have
+              gained experience from many types of roles. These include creating a <span>Customer Service</span> team
+              for a
+              startup company as well as selecting and managing the help desk and live chat systems the team used.</p>
+            <p>When the company moved from Washington to Arizona, I switched to the <span>Warehouse Manager</span> role
+              where I took on
+              the task of switching the company model from on-demand production to a stock and pick system. With very
+              little
+              background in logistics this meant I had to learn quickly on the job. I was able to design a warehouse
+              layout
+              and implement software that allowed for stock management and order picking.</p>
+          </div>
+
+          <img src="./img/seahawks-josh.jpg" alt=""
+            class="img-fluid rounded col-12 col-md-6 about-img mt-2 p-0 order-1 order-lg-2 mx-md-2">
+        </div>
+        <div class="row justify-content-center align-items-center p-0">
+          <img src="./img/sailing.jpg" alt="" class="img-fluid rounded col-12 col-md-6 about-img mt-2 p-0">
+
+          <div class="col-12 col-md-6 text-center mt-2 p-0 mx-md-2">
+
+            <p>At the company I currently work for I started as a <span>Billing Specialist</span> and quickly worked my
+              way to <span>Team Lead</span>
+              then to <span>Customer Advocate</span> and am now in a Process Improvement Analyst role. I enjoy digging
+              in to data to
+              identify trending issues and finding ways to improve business processes. My drive to <span>always find a
+                better way</span>
+              has led to quick advancement in any role I hold.</p>
+          </div>
+        </div>
+        <div class="row justify-content-center align-items-center p-0">
+
+          <div class="col-12 col-md-6 text-center mt-2 p-0 mx-md-2">
+            <p>In my free time I enjoy <span>Sailing</span> and am a US Sailing certified Sailing Instructor. I have a
+              passion for
+              <span>Astronomy</span>, <span>3D Printing</span> and tinkering with home automation gadgets. I also enjoy
+              playing strategy games and
+              listening to audiobooks.
+            </p>
+          </div>
+
+          <img src="./img/astronomy.jpg" alt="" class="img-fluid rounded col-12 col-md-6 about-img mt-2 p-0">
+
+        </div>
+
+
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="text-center mt-auto">Josh Jones &copy; 2022</footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+    integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+    crossorigin="anonymous"></script>
+
+  <script>
+    $(function () {
+      $(document).scroll(function () {
+        var $nav = $("#mainNavbar");
+        $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
+      });
+    });
+  </script>
 </body>
+
 </html>
